@@ -18,8 +18,8 @@ class Shoe
     @brand = brand
 
     brand.collect do |variable|
-      
+
     end
-    
+
   end
 end
