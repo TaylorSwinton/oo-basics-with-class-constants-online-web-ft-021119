@@ -17,13 +17,13 @@ class Shoe
 
   def brand(brand)
     @brand = brand
-    
+
     brand.collect do |variable|
       if variable != brand[-1]
           BRANDS << variable
       end
     end
-    
+
   end
 
 end
