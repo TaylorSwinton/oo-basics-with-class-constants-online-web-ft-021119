@@ -8,17 +8,22 @@ class Shoe
     @brand = brand
     BRANDS << brand
 
-    brand.collect do |variable|
-      if variable != brand[-1]
-          BRANDS << variable
-      end
-    end
-
   end
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
+  end
+
+  def brand(brand)
+    @brand = brand
+    
+    brand.collect do |variable|
+      if variable != brand[-1]
+          BRANDS << variable
+      end
+    end
+    
   end
 
 end
